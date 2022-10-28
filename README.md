@@ -62,7 +62,7 @@ Assuming you've done the above two steps, you can start CLion, and open the proj
 
 ### License
 
-&copy; 2022-2029 Konstantin Gredeskoul.
+&copy; 2022-2029 xzy.
 
 Open sourced under MIT license, the terms of which can be read here — [MIT License](http://opensource.org/licenses/MIT).
 
