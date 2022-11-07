@@ -10,10 +10,10 @@ This project refers to muduo(https://github.com/chenshuo/muduo) project and cmak
 
 It is a minimal project that's kept deliberately very small. When you build it using CMake/make (see below) it generates:
 
- 1. A tiny **static library** `lib/libdivision.a`,
- 2. **A command line binary `bin/divider`**, which links with the library,
- 3. **An executable unit test** `bin/divider_tests`  using [Google Test library](https://github.com/google/googletest).
- 4. **An optional BASH build script** `build-and-run` that you can use to quickly test if the project compiles, and runs.
+ 1. A tiny**cmake demo**
+ 2. **A command line binary `bin/divider`**,**using cmake-project-template**(https://github.com/kigster/cmake-project-template).
+ 3. **An executable spdlog** `bin/divider_tests`  **using spdlog** (https://github.com/gabime/spdlog).
+ 4. **An optional BASH build script** using **muduo CmakeList** (https://github.com/chenshuo/muduo).
 
 ### Prerequisites
 
@@ -33,7 +33,7 @@ First we need to check out the git repo:
 ❯ mkdir ~/workspace
 ❯ cd ~/workspace
 ❯ git clone \
-    https://github.com/kigster/cmake-project-template \
+    https://github.com/xiongmingzhi/cmake-project-template \
     my-project
 ❯ cd my-project
 ❯ bash build-and-run
