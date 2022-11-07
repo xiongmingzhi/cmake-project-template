@@ -4,3 +4,4 @@ add_executable(out_tests ${SOURCE_FILES})
 #target_link_libraries(out_tests division)
 install(TARGETS out_tests DESTINATION bin)
 
+
