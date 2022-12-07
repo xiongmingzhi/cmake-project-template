@@ -1,0 +1,2 @@
+add_executable(Detection_test Detection_test.cpp)
+target_link_libraries(Detection_test src_net)
