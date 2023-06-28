@@ -5,6 +5,7 @@ namespace xzy{
     void bubble_sort(int arr[], int size);
     void container_test();
     void cpptest();
+    void convert();
     void ptrUse();
     void func();
     void fileFunc();
