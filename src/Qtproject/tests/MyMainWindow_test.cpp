@@ -135,8 +135,6 @@ int main(int argc, char *argv[]) {
     w.setLayout(mainLayout);
     w.setGeometry(400, 200, 800, 400);
     w.show();
-//    MyMainWindow mainWindow;
-//    mainWindow.show();
     return QApplication::exec();
 }
 
