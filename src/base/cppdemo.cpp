@@ -250,6 +250,25 @@ inline void fileFunc(){
 
 }
 
+inline void mytest(){
+    struct S1{
+        char c1;//在偏移量为0处
+        int a;//从偏移量4到8处
+        char c2;//在偏移量9处-----------共9个
+        //------最大对齐数为4，所以要为4的倍数---因此为12个
+    };
+
+    struct S2{
+        char c1;//在偏移量为0处
+        char c2;//在偏移量为1处
+        int a;//在偏移量为4-8处--------共8个
+        //----------最大对齐数为4，所以要为4的倍数---因此为8个
+    };
+    struct S1 s1 = {0};
+    printf("struct: %d\n", sizeof(s1));
+    struct S2 s2 = {0};
+    printf("%d\n", sizeof(s2));
+}
 void cpptest(){
     clock_t start, finish;
     start = clock();
@@ -258,10 +277,12 @@ void cpptest(){
     //ptrUse();
     //func();
     fileFunc();
+    //mytest();
     finish = clock();
     std::cout << "C++ demo spend time is: " << (double)(finish-start)/CLOCKS_PER_SEC << std::endl;
 }
 }
+
 
 
 
