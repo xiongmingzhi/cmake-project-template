@@ -12,7 +12,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 include_directories(${PROJECT_SOURCE_DIR})#设置当前项目为根目录
-include_directories(${PROJECT_SOURCE_DIR}/resource/)#设置当前项目为根目录
+include_directories(${PROJECT_SOURCE_DIR}/3rdparty/)#设置当前项目为根目录
 include_directories(${PROJECT_SOURCE_DIR}/3rdparty/spdlog-2.x/include/)#设置当前项目为根目录
 #include_directories(${Boost_INCLUDE_DIRS})
 string(TOUPPER ${CMAKE_BUILD_TYPE} BUILD_TYPE)
@@ -20,6 +20,7 @@ message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_T
 add_subdirectory(src/base)
 add_subdirectory(src/net)
 add_subdirectory(src/Qtproject)
+add_subdirectory(src/OpenGLproject)
 add_subdirectory(main)
 
 
