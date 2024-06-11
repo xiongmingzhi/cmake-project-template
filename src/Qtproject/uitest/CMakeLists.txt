@@ -1,0 +1,10 @@
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
+qt5_add_resources(qrc_FILES TestUI.qrc)
+qt5_wrap_ui(ui_FILES testui.ui)
+add_executable(testUI testui.cpp testui_main.cpp ${qrc_FILES} ${ui_FILES})
+target_link_libraries(testUI src_Qtproject)
+
+qt5_add_resources(qrc_vrg VGRibbonWindow.qrc)
+qt5_wrap_ui(ui_vrg vgribbonwindow.ui)
+add_executable(vgr_test vgr_test.cpp vgribbonwindow.cpp ${qrc_vrg} ${ui_vrg})
+target_link_libraries(vgr_test src_Qtproject)
