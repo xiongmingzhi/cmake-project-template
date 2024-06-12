@@ -8,6 +8,7 @@
 #include <map>
 #include <fstream>
 #include <sstream>
+#include <functional>
 namespace xzy{
 
 inline void bubble_sort(int arr[], int size){
